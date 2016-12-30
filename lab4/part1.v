@@ -1,0 +1,1 @@
+// need 4 JK flip-flops (74LS107) and an AND chip

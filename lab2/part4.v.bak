@@ -1,0 +1,19 @@
+module part4(SW, LEDR, LEDG, HEX4, HEX6, HEX0, HEX1);
+  input [8:0] SW;
+  output {6:0} HEX6, HEX4, HEX1, HEX0;
+  output [8:0] LEDR, LEDG;
+
+  assign LEDR = SW;
+
+  wire eA, eB;
+
+  comparator C0 (SW[3:0], eB);
+  comparator C1 (Sw[7:4], eA);
+
+module Comparator(V, z);
+  input [3:0] V;
+  output z;
+
+  assign z = V[3]&(V[2]|V[1]);
+
+endmodule

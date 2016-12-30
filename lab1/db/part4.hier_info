@@ -1,0 +1,12 @@
+|part4
+SW[0] => HEX0~0.IN0
+SW[0] => HEX0~2.IN1
+SW[1] => HEX0~1.IN0
+SW[1] => HEX0~4.IN0
+SW[2] => HEX0~0.IN1
+SW[2] => HEX0[1].DATAIN
+SW[2] => HEX0~4.IN1
+SW[2] => HEX0~1.IN1
+SW[2] => HEX0[2].DATAIN
+
+

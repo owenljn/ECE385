@@ -1,0 +1,249 @@
+|part5
+SW[0] => SW[0].IN2
+SW[1] => SW[1].IN2
+SW[2] => SW[2].IN2
+SW[3] => SW[3].IN2
+SW[4] => SW[4].IN2
+SW[5] => SW[5].IN2
+SW[6] => SW[6].IN2
+SW[7] => SW[7].IN2
+SW[8] => SW[8].IN2
+SW[9] => SW[9].IN2
+SW[10] => SW[10].IN2
+SW[11] => SW[11].IN2
+SW[12] => SW[12].IN2
+SW[13] => SW[13].IN2
+SW[14] => SW[14].IN2
+SW[15] => SW[15].IN2
+SW[16] => SW[16].IN1
+
+
+|part5|Comparator:C0
+V[0] => ~NO_FANOUT~
+V[1] => e.IN0
+V[2] => e.IN1
+V[3] => e.IN1
+
+
+|part5|Comparator:C1
+V[0] => ~NO_FANOUT~
+V[1] => e.IN0
+V[2] => e.IN1
+V[3] => e.IN1
+
+
+|part5|Comparator:C2
+V[0] => ~NO_FANOUT~
+V[1] => e.IN0
+V[2] => e.IN1
+V[3] => e.IN1
+
+
+|part5|Comparator:C3
+V[0] => ~NO_FANOUT~
+V[1] => e.IN0
+V[2] => e.IN1
+V[3] => e.IN1
+
+
+|part5|FullAdder:F0
+a => x.IN0
+b => x.IN1
+b => co.IN1
+ci => co.IN1
+ci => s.IN1
+
+
+|part5|FullAdder:F1
+a => x.IN0
+b => x.IN1
+b => co.IN1
+ci => co.IN1
+ci => s.IN1
+
+
+|part5|FullAdder:F2
+a => x.IN0
+b => x.IN1
+b => co.IN1
+ci => co.IN1
+ci => s.IN1
+
+
+|part5|FullAdder:F3
+a => x.IN0
+b => x.IN1
+b => co.IN1
+ci => co.IN1
+ci => s.IN1
+
+
+|part5|ComparatorS:C4
+S[0] => ~NO_FANOUT~
+S[1] => z.IN0
+S[2] => z.IN1
+S[3] => z.IN1
+S[4] => z.IN1
+
+
+|part5|CircuitA:A0
+V[0] => A[0].DATAIN
+V[1] => A.IN0
+V[1] => A.IN0
+V[1] => A.IN0
+V[1] => A[1].DATAIN
+V[2] => A.IN1
+V[3] => A.IN1
+V[3] => A.IN1
+
+
+|part5|mux4bit2to1:MUX0
+z => M.IN0
+z => M.IN0
+z => M.IN0
+z => M.IN0
+z => M.IN0
+z => M.IN0
+z => M.IN0
+z => M.IN0
+S[0] => M.IN1
+S[1] => M.IN1
+S[2] => M.IN1
+S[3] => M.IN1
+A[0] => M.IN1
+A[1] => M.IN1
+A[2] => M.IN1
+A[3] => M.IN1
+
+
+|part5|decoder_7seq:D0
+M[0] => HEX0.IN1
+M[0] => HEX0.IN1
+M[0] => HEX0.IN1
+M[0] => HEX0.IN1
+M[0] => HEX0.IN1
+M[0] => HEX0.IN1
+M[0] => HEX0.IN1
+M[0] => HEX0.IN0
+M[0] => HEX0.IN0
+M[0] => HEX0.IN1
+M[0] => HEX0.IN1
+M[1] => HEX0.IN1
+M[1] => HEX0.IN1
+M[1] => HEX0.IN1
+M[1] => HEX0.IN1
+M[1] => HEX0.IN1
+M[1] => HEX0.IN1
+M[2] => HEX0.IN0
+M[2] => HEX0.IN0
+M[2] => HEX0.IN1
+M[2] => HEX0.IN0
+M[3] => HEX0.IN1
+M[3] => HEX0.IN1
+M[3] => HEX0.IN1
+
+
+|part5|FullAdder:F4
+a => x.IN0
+b => x.IN1
+b => co.IN1
+ci => co.IN1
+ci => s.IN1
+
+
+|part5|FullAdder:F5
+a => x.IN0
+b => x.IN1
+b => co.IN1
+ci => co.IN1
+ci => s.IN1
+
+
+|part5|FullAdder:F6
+a => x.IN0
+b => x.IN1
+b => co.IN1
+ci => co.IN1
+ci => s.IN1
+
+
+|part5|FullAdder:F7
+a => x.IN0
+b => x.IN1
+b => co.IN1
+ci => co.IN1
+ci => s.IN1
+
+
+|part5|ComparatorS:C5
+S[0] => ~NO_FANOUT~
+S[1] => z.IN0
+S[2] => z.IN1
+S[3] => z.IN1
+S[4] => z.IN1
+
+
+|part5|CircuitA:A1
+V[0] => A[0].DATAIN
+V[1] => A.IN0
+V[1] => A.IN0
+V[1] => A.IN0
+V[1] => A[1].DATAIN
+V[2] => A.IN1
+V[3] => A.IN1
+V[3] => A.IN1
+
+
+|part5|mux4bit2to1:MUX1
+z => M.IN0
+z => M.IN0
+z => M.IN0
+z => M.IN0
+z => M.IN0
+z => M.IN0
+z => M.IN0
+z => M.IN0
+S[0] => M.IN1
+S[1] => M.IN1
+S[2] => M.IN1
+S[3] => M.IN1
+A[0] => M.IN1
+A[1] => M.IN1
+A[2] => M.IN1
+A[3] => M.IN1
+
+
+|part5|CircuitB:B0
+z => HEX[3].DATAIN
+z => HEX[0].DATAIN
+z => HEX[5].DATAIN
+z => HEX[4].DATAIN
+
+
+|part5|decoder_7seq:D1
+M[0] => HEX0.IN1
+M[0] => HEX0.IN1
+M[0] => HEX0.IN1
+M[0] => HEX0.IN1
+M[0] => HEX0.IN1
+M[0] => HEX0.IN1
+M[0] => HEX0.IN1
+M[0] => HEX0.IN0
+M[0] => HEX0.IN0
+M[0] => HEX0.IN1
+M[0] => HEX0.IN1
+M[1] => HEX0.IN1
+M[1] => HEX0.IN1
+M[1] => HEX0.IN1
+M[1] => HEX0.IN1
+M[1] => HEX0.IN1
+M[1] => HEX0.IN1
+M[2] => HEX0.IN0
+M[2] => HEX0.IN0
+M[2] => HEX0.IN1
+M[2] => HEX0.IN0
+M[3] => HEX0.IN1
+M[3] => HEX0.IN1
+M[3] => HEX0.IN1
+
+

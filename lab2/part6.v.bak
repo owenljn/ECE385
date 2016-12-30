@@ -1,0 +1,2 @@
+module part6(SW, LEDR, LEDG, HEX2, HEX1, HEX0);
+  

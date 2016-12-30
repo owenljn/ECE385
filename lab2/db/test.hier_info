@@ -1,0 +1,140 @@
+|test
+SW[0] => SW[0].IN2
+SW[1] => SW[1].IN2
+SW[2] => SW[2].IN2
+SW[3] => SW[3].IN2
+SW[4] => SW[4].IN2
+SW[5] => SW[5].IN2
+SW[6] => SW[6].IN2
+SW[7] => SW[7].IN2
+SW[8] => SW[8].IN1
+SW[9] => ~NO_FANOUT~
+SW[10] => ~NO_FANOUT~
+SW[11] => ~NO_FANOUT~
+SW[12] => ~NO_FANOUT~
+SW[13] => ~NO_FANOUT~
+SW[14] => ~NO_FANOUT~
+SW[15] => ~NO_FANOUT~
+SW[16] => ~NO_FANOUT~
+SW[17] => ~NO_FANOUT~
+
+
+|test|comparator:C0
+V[0] => ~NO_FANOUT~
+V[1] => z.IN0
+V[2] => z.IN1
+V[3] => z.IN1
+
+
+|test|comparator:C1
+V[0] => ~NO_FANOUT~
+V[1] => z.IN0
+V[2] => z.IN1
+V[3] => z.IN1
+
+
+|test|fulladder:A0
+a => d.IN0
+b => d.IN1
+b => co.IN1
+ci => s.IN1
+ci => co.IN1
+
+
+|test|fulladder:A1
+a => d.IN0
+b => d.IN1
+b => co.IN1
+ci => s.IN1
+ci => co.IN1
+
+
+|test|fulladder:A2
+a => d.IN0
+b => d.IN1
+b => co.IN1
+ci => s.IN1
+ci => co.IN1
+
+
+|test|fulladder:A3
+a => d.IN0
+b => d.IN1
+b => co.IN1
+ci => s.IN1
+ci => co.IN1
+
+
+|test|comparator9:C2
+V[0] => ~NO_FANOUT~
+V[1] => z.IN0
+V[2] => z.IN0
+V[3] => z.IN1
+V[3] => z.IN1
+V[4] => z.IN1
+
+
+|test|circuitA:AA
+V[0] => A[0].DATAIN
+V[1] => A.IN0
+V[1] => A.IN0
+V[1] => A.IN0
+V[1] => A[1].DATAIN
+V[2] => A.IN1
+V[3] => A.IN1
+V[3] => A.IN1
+
+
+|test|mux_4bit_2to1:M0
+s => M.IN0
+s => M.IN0
+s => M.IN0
+s => M.IN0
+s => M.IN0
+s => M.IN0
+s => M.IN0
+s => M.IN0
+U[0] => M.IN1
+U[1] => M.IN1
+U[2] => M.IN1
+U[3] => M.IN1
+V[0] => M.IN1
+V[1] => M.IN1
+V[2] => M.IN1
+V[3] => M.IN1
+
+
+|test|circuitB:BB
+z => SSD[5].DATAIN
+z => SSD[0].DATAIN
+z => SSD[3].DATAIN
+z => SSD[4].DATAIN
+
+
+|test|b2d_7seg:S0
+X[0] => SSD.IN1
+X[0] => SSD.IN1
+X[0] => SSD.IN1
+X[0] => SSD.IN1
+X[0] => SSD.IN1
+X[0] => SSD.IN1
+X[0] => SSD.IN1
+X[0] => SSD.IN1
+X[0] => SSD.IN0
+X[0] => SSD.IN0
+X[0] => SSD.IN1
+X[1] => SSD.IN1
+X[1] => SSD.IN1
+X[1] => SSD.IN1
+X[1] => SSD.IN1
+X[1] => SSD.IN1
+X[1] => SSD.IN1
+X[2] => SSD.IN0
+X[2] => SSD.IN0
+X[2] => SSD.IN0
+X[2] => SSD.IN1
+X[3] => SSD.IN1
+X[3] => SSD.IN1
+X[3] => SSD.IN1
+
+
